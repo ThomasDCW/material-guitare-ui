@@ -1,4 +1,4 @@
-import { Image } from '@mui/icons-material';
+import { Button } from '@mui/material';
 import { Box, Typography } from '@mui/material';
 
 export default function GuitareCard() {
@@ -9,20 +9,37 @@ export default function GuitareCard() {
         sx={{
           margin: '2em',
           bgcolor: '#ffffff',
-          height: '332px',
-          width: '240px',
-          borderRadius: '8px',
-          boxShadow: '3px 3px 1px 3px #00000050',
-          flexDirection: 'column',
-          justifyContent: 'center',
+          height: '200px',
+          borderRadius: '6px',
+          boxShadow: '1px 1px 1px 1px #00000050',
+          justifyContent: 'space-around',
         }}
       >
         <img src='https://thumbs.static-thomann.de/thumb/thumb220x220/pics/prod/462511.webp' />
-        <Typography align='center'>Gibson</Typography>
-        <Typography align='center'>Les Paul Standard 60s UB</Typography>
-        <Typography align='center' color='green'>
-          2.290 €
-        </Typography>
+        <Box
+          display='flex'
+          sx={{
+            flexDirection: 'column',
+            justifyContent: 'space-evenly',
+          }}
+        >
+          <Typography color='#313131' variant='h6'>
+            Gibson - Les Paul Standard 60s UB
+          </Typography>
+          <Typography color='#000000a0'>Corps en acajou</Typography>
+          <Typography color='#000000a0'>Table en érable flammé AA</Typography>
+          <Typography color='#000000a0'>Manche en acajou</Typography>
+          <Typography color='#03b27e'>Disponible immédiatement</Typography>
+        </Box>
+        <Box>
+          <Typography
+            color='#313131'
+            variant='h5'
+            sx={{ fontWeight: 'bold', marginRight: '10px' }}
+          >
+            2.290€
+          </Typography>
+        </Box>
       </Box>
     </>
   );
