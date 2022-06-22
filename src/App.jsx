@@ -1,9 +1,9 @@
-import MyButton from './components/button';
+import GuitareCard from './components/guitarecard';
 
 function App() {
   return (
     <div className='App'>
-      <MyButton />
+      <GuitareCard />
     </div>
   );
 }
